@@ -121,7 +121,7 @@ main{
 
 .first-home h2{
     /*font-size: 3em;*/
-    font-size: clamp(3rem, 4vw, 5rem);
+    font-size: clamp(2.5rem, 4vw, 5rem);
     width: 35vw;
     padding: 2em 0em 0.5em 1em;
 }
@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb{
     }
 
     .first-home h2{
-        width: 60vw;
+        width: 70vw;
         text-align: right;
         margin-right: 1em;
     }
