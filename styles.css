@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+}
+
+/*Header*/
+header{
+    width: 100vw;
+    height: 15vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/*Header - logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.logo img{
+    margin: 0 1em;
+}
+
+.logo h1{
+    font-size: clamp(1.5em, 2vw, 3em);
+}
+
+/*Header nav-bar*/
+.nav-label, #menu{
+    display: none;
+}
+
+.menu, .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu li a, button, .footer-links ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5em;
+    letter-spacing: 0.06em;
+    font-size: clamp(0.6em, 1.5vw, 1em);
+}
+
+.menu li a:after, .footer-links ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #6BD9EC;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+.menu li a:hover:after, .footer-links ul li a:hover:after{
+    width: 100%;
+}
+
+
+.menu button{
+    margin-right: 1em;
+}
+
+.menu button{
+    background-color: #6BD9EC;
+    padding: 0.5em 0.7em;
+    border-radius: 2em;
+    color: black;
+    border: none;
+    font-size: clamp(0.6em, 1.5vw, 1em);
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu button:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    border: 3px solid #6BD9EC;
+    background-color: rgba(85, 85, 85, 0.4);
+    color: #6BD9EC;
+}
+
+/*Main properties*/
+main{
+   width: auto;
+    height: auto;
+}
+
+/*First home*/
+.first-home{
+    width: 100vw;
+    height: 85vh;
+    background: url('images/background-home.png');
+    background-size: cover;
+}
+
+.first-home h2{
+    /*font-size: 3em;*/
+    font-size: clamp(2rem, 4vw, 5rem);
+    width: 35vw;
+    padding: 2em 0em 0.5em 1em;
+}
+
+.first-home .btns-home label{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+
+.btns-home input{
+    padding: 0.8em;
+    color: #d4f9ff;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.6em, 1.5vw, 1em);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 2em;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.btns-home input:hover{
+    cursor: pointer;
+    background: rgb(27, 27, 27);
+    box-shadow: 3px 3px 10px 0px #0000009f ;
+    color: white;
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+/*Second home*/
+.security{
+    width: 100vw;
+    height: 85vh;
+    background: url('images/background-second.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.security h2{
+    font-size: clamp(2rem, 4vw, 5rem);
+    padding: 1em 0; 
+}
+
+.medidas{
+    height: 70vh;
+    display: flex;
+    margin-top: 5em;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.medida{
+    font-size: clamp(0.8em, 1.5vw, 2em);
+    width: 20vw;
+    margin-right: 1em;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.medida img{
+    width: 3em;
+    margin-bottom: 1em;
+}
+
+/*Footer*/
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    color: white;
+}
+
+
+
+.copy{
+    font-size: clamp(0.6em, 1.5vw, 1em);
+}
+
+@media (max-width: 700px){
+    .nav-label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        position: absolute;
+        top: 15vh;
+        bottom: 0;
+        background-color: #666666;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center); 
+        transition: 1s ease-in-out;
+    }
+    
+    .nav-input:checked + .menu{
+        clip-path: circle(100% at center);
+    }
+
+    .first-home{
+        background: url('images/ana-do-amaral-hdd0StA8kic-unsplash.jpg');
+        background-size: cover;
+        display: flex;
+        align-items:flex-end;
+        flex-direction: column;
+        justify-content: first baseline;
+    }
+
+    .first-home h2{
+        width: 60vw;
+        text-align: right;
+        margin-right: 1em;
+    }
+
+    .first-home .btns-home{
+        margin-right: 2em;
+    }
+
+    .first-home .btns-home label{
+        width: 30vw;
+    }
+
+    .security h2{
+        font-size: ;
+    }
+    .medidas{
+        flex-wrap: wrap;
+    }
+
+    .medida{
+        width: 45%;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
