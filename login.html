@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="Logo">
+                <h1>uPet</h1>
+            </a>
+            <nav class="navbar">
+                <label class="nav-label" for="menu">
+                    <img src="assets/menu.svg" alt="Menu icon" class="menu-icon">
+                </label>
+                <input type="checkbox" id="menu" class="nav-input">
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-item">Inicio</a></li>
+                    <li><a href="#" class="nav-item">Pasajero</a></li>
+                    <li><a href="#" class="nav-item">Conductor</a></li>
+                    <li><a href="#" class="nav-item">Veterinarias</a></li>
+                    <button class="login" class="nav-item">Iniciar sesión</button>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-login">
+            <div class="card-login">
+                <img src="assets/logo.svg" alt="Logo uPet">
+                <label>
+                    <input type="text" name="username" id="username" placeholder="Usuario">
+                </label>
+                <label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </label>
+                <div class="actions">
+                    <label>
+                        <input type="checkbox" value="recordar">Recordar
+                    </label>
+                    <a href="#">Olvidé mi contraseña</a>
+                </div>
+                <button class="send">Enviar</button>
+                <a href="registro.html" class="have-account">Ya tengo cuenta</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
