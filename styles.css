@@ -120,7 +120,7 @@ header{
 .menu button:hover{
     transition: 0.3s ease-in;
     cursor: pointer;
-    border: 3px solid #6BD9EC;
+    outline: 3px solid #6BD9EC;
     background-color: rgba(85, 85, 85, 0.4);
     color: #6BD9EC;
 }
@@ -193,7 +193,7 @@ main{
     padding: 1em 0; 
 }
 
-.medidas{
+.measures{
     height: 70vh;
     display: flex;
     margin-top: 5em;
@@ -201,7 +201,7 @@ main{
     align-items: baseline;
 }
 
-.medida{
+.measure{
     font-size: clamp(0.8em, 1.5vw, 2em);
     width: 20vw;
     margin-right: 1em;
@@ -209,7 +209,7 @@ main{
     justify-content: space-between;
 }
 
-.medida img{
+.measure img{
     width: 3em;
     margin-bottom: 1em;
 }
@@ -333,33 +333,40 @@ label input::placeholder{
 .driver{
     width: 100vw;
     height: 85vh;
-    background-color: #d4f9ff;
+   /* background: url('images/background-second.png');*/
+   background-image: linear-gradient(160deg, #c5e5fc 0%, #5ed1ff 80%);
+   background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .driver .left{
-    width: 45vw;
+    width: 55vw;
     text-align: center;
 }
 
 .driver h2{
+    font-size: clamp(3em, 3.5em, 4em);
     margin: 0 0 0.5em 0;
     padding: 0;
     width: 100%;
 }
 
 .driver .left .description{
-    font-size: clamp(1em, 1.7em, 2.3em);
+    font-size: clamp(1.3em, 1.7em, 2.3em);
     margin-bottom: 1em;
 }
 
+.driver .left .steps{
+    width: 50vw;
+    margin: 0 auto;
+}
 .driver .left .steps .step{
     display: flex;
     align-items: center;
     justify-content: baseline;
-    font-size: clamp(0.9em, 1.1em , 2em);
+    font-size: clamp(1.1em, 1.3em , 2em);
     margin: 1em 0 1.5em;
 }
 .driver .left .steps .step img{
@@ -368,8 +375,10 @@ label input::placeholder{
     margin-right: 1em;
 }
 .driver .right img{
-    max-width: 390px;
-    border-radius: 40%;
+    min-width: 100px;
+    max-width: 370px;
+    border-radius: 100px;
+    margin: 0 3em
 }
 
 .sign-up{
@@ -432,16 +441,55 @@ label input::placeholder{
         font-size: 2em;
     }
 
-    .medidas{
+    .measures{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .medida{
+    .measure{
         width: 40%;
         font-size: 0.9em;
     }
 
+    /*CONDUCTOR - PAGE*/
+    .driver{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    /*.driver h2{
+        margin: 0 0;
+    }*/
+    .driver .left {
+        width: 100vw;
+    }
+
+    .driver .left .description{
+        width: 100vw;
+    }
+    .driver .left .steps{
+        width: 100vw;
+    }
+
+    .driver .left .steps .step{
+        width: 90vw;
+        justify-content: center;
+        margin: 1em auto;
+    }
+    .driver .left .steps .step img{
+        margin: 0 0.6em 0 0em;
+    }
+    .driver .right{
+        display: none;
+    }
+
+    .driver .left .sign-up{
+        width: auto;
+        margin: 3em auto;
+        padding: 1em 2em;
+        font-size: 1em;
+    }
+    /*FOOTER*/
     footer{
         flex-direction: column;
         justify-content: space-around;
