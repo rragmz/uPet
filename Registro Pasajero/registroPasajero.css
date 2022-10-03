@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Header*/
+
+header{
+    width: 100vw;
+    height: 15vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/*Header - logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.logo img{
+    width: 6em;
+}
+
+.logo h1{
+    font-size: clamp(1.5em, 2vw, 3em);
+}
+
+/*Header nav-bar*/
+.nav-label, #menu{
+    display: none;
+}
+
+.menu, .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu li a, button, .footer-links ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5em;
+    letter-spacing: 0.06em;
+    font-size: clamp(1em, 1.5vw, 1em);
+}
+
+.menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: #6BD9EC;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+.menu li a:hover:after, .footer-links ul li a:hover:after{
+    width: 100%;
+}
+
+
+.menu button{
+   margin-right: 1em;
+}
+
+.menu button{
+    background-color: #6BD9EC;
+    padding: 0.5em 0.7em;
+    border-radius: 2em;
+    color: black;
+    border: none;
+    font-size: clamp(1em, 1.5vw, 1em);
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu button a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu button:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    outline: 3px solid #6BD9EC;
+    background-color: rgba(85, 85, 85, 0.4);
+    color: #6BD9EC;
+}
+
+.menu button a:hover{
+    color: #6BD9EC;
+}
+
+
+.menu-responsive, #check{
+    display: none;
+}
+
+
+/*Body*/
+body{
+  
+    align-items: center;
+    justify-content: center;
+    background: rgba(223, 247, 255, 0.35);
+}
+
+.wrapper {
+    display: flex;
+    position:absolute;
+    max-width: 430px;
+     max-height: 490px; 
+    width: 100%;
+    background: rgba(255, 193, 99, 0.4);
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    left: 33.5%;
+
+    
+  
+    
+}
+
+
+.wrapper h2{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+   
+}
+
+.wrapper h2::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background:  #FBDCCC;  
+}
+
+.wrapper form{
+    margin-top: 30px;
+
+}
+
+.wrapper form .input-box{
+    
+    margin: 10px 0;
+
+
+}
+
+form .input-box input{
+    height:80%;
+    width:100%;  
+    padding:0 30px;
+    font-size:17px;
+    font-weight:400;
+    border:2px solid #C7BEBE;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+    
+    
+    
+}
+
+.input-box input:focus,
+.input-box input:valid{
+border: 2px solid  #4070f4;
+}
+
+form .policy{
+    display: flex;
+    align-items: center;
+
+}
+
+form .policy h3{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+form .input-box.button input{
+    color: #fff;
+    background:#4070f4 ;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-box.button input:hover{
+    background: #0e4bf1; ;
+}
+
+.account{
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+}
+
+
+.have-account{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 3px;
+    bottom: 0;
+    
+    
+}
+
+.have-account a{
+    color: #000;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #0e4bf1;
+}
+
+.have-account a:hover{
+    color: #4070f4;
+
+}
+
+/*ocultar*/
+.menu-responsive, #check{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    *{
+        overflow: hidden
+    }
+
+    .wrapper {
+        display: contents;
+        position:absolute;
+        max-width: 430px;
+        width: 95%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+        justify-content: center;
+        justify-self: center;
+        margin: 10px;
+        background: rgba(255, 193, 99, 0.4);
+    }
+
+    .wrapper form{
+        margin-top: 30px;
+        background: rgba(255, 193, 99, 0.4);
+        border-radius: 5px;
+
+}
+
+
+
+.wrapper h2{
+    display: contents;
+}
+
+.wrapper h2::before{
+    display: none;
+}
+
+form .input-box input {
+    width: 95%;
+    padding: 0px 30px;
+    font-size: 17px;
+    font-weight: 400;
+    border: 2px solid #C7BEBE;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.menu-responsive{
+    display: block;
+  }
+  ul{
+      display: grid;
+      position: fixed;
+      width: 100%;
+      height: auto;
+      background: #2c3e50;
+      top: 15vh;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.activa{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .menu button{
+    display: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    height: auto;
+}
+.account {
+    position: initial;
+    margin-left: 30px;
+    top:auto
+}
+
+
+    }
+
+    
+   

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Pasajero</title>
+    <link rel="stylesheet" href="registroPasajero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    ">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+
+
+    <body style="background: rgba(223, 247, 255, 0.35);">
+
+        <header> 
+           <a href="#" class="logo">
+               <img src="assets/logo.svg" alt="Logo">
+               <h1>uPet</h1>
+           </a>
+           <nav class="navbar">
+               
+              
+              
+              <input type="checkbox" id="check" >
+               <label for="check" class="menu-responsive">
+                 <i  style="color:white;" class="fas fa-bars"></i>
+               </label>
+              
+               
+               <label class="nav-label" for="menu">
+                   <img src="assets/menu.svg" alt="Menu icon" class="menu-icon">
+               </label>
+     
+               <input type="checkbox" id="menu" class="nav-input">
+               <ul class="menu">
+                   <li><a href="#" class="nav-item">Inicio</a></li>
+                   <li><a href="#" class="nav-item">Pasajero</a></li>
+                   <li><a href="#" class="nav-item">Conductor</a></li>
+                   <li><a href="#" class="nav-item">Veterinarias</a></li>
+                   <button class="login" class="nav-item"><a href="login.html">Iniciar sesión</a></button>
+               </ul>
+           </nav>
+        </header>
+ 
+    <section class="foto">
+    <div class="upload">
+        <img src="noprofil.jpg" width = 100 height = 100 alt="">
+        <div class="round">
+          <input type="file">
+          <i class = "fa fa-camera" style = "color: #fff;"></i>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="wrapper">
+
+        <h2> Registro Pasajeros</h2>
+        <form action="#">
+
+            <div class="input-box">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Ingrese su email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="tel">Telefono</label>
+                <input type="tel" name="tel" placeholder="Número de celular" required>
+            </div>
+
+
+            <div class="input-box">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" placeholder="Ingrese una contraseña" required>
+            </div>
+
+            <div class="input-box">
+                <label for="password1">Repetir Contraseña</label>
+                <input type="password" name="password1" placeholder="Repita la contraseña" required>
+            </div>
+
+            <div class="policy">
+                <input type="checkbox" name="policy" checked required>
+                <label for="policy">Acepto terminos y condiciones</label>
+            </div>
+
+            <div class="input-box button">
+                <input type="submit" value="Confirmar">
+            </div>
+        
+        </form>
+        <div class="account">
+            <h4 class="have-account"> Ya tengo una cuenta <a href="#">Iniciar Sesión</a> </h4> 
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
