@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /*background-color: rgb(233, 233, 230);*/
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(177, 199, 231) 0%, rgb(171, 221, 212) 90% );
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+h1{
+    padding: 1em;
+    font-size: clamp(2em, 3em, 4em);
+    text-align: center;
+    color: black;
+}
+
+#drivers{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-driver{
+   width: 26vw;
+    height: 450px;
+    
+    border-radius: 20px;
+    /*background-color: rgb(203, 231, 255);
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(177, 199, 231) 0%, rgb(171, 221, 212) 90% );*/
+    background-color: rgb(252, 250, 248);
+    margin-bottom: 3em;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(177, 199, 231) 0%, rgb(171, 221, 212) 90% );*/
+/*.card-driver:hover{
+    transform: rotateY(180deg);
+}*/
+
+.front-card, .back-card{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: rgb(252, 250, 248);
+
+}
+
+.back-card{
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*input[id='contact-driver']:checked ~ .card-driver{
+    transform: rotateY(-180deg);
+}
+/*input[id='contact-driver']:checked ~ .card-driver{
+}*/
+
+.back-card h3{
+    font-weight: 500;
+}
+.phone{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.back-card ul li img{
+    width: 2.5em;
+    border: none;
+}
+
+.back-card ul{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+.back-card ul li{
+    list-style: none;
+}
+
+.back-card h4{
+    display: block;
+}
+.img-space{
+    width: 100%;
+    /*background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(138, 175, 231) 0%, rgb(138, 219, 206) 90% );*/
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.card-driver img{
+    width: 8em;
+    margin: 1em;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.card-driver h2{
+    font-weight: 700;
+}
+.comunes{
+    margin: 1em 0;
+    font-weight: 500;
+}
+.sizes{
+    width: 80%;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.urgencies{
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.yes{
+    color: red
+}
+
+.no{
+    color: grey;
+}
+
+.contact-driver{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: black;
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(177, 199, 231) 0%, rgb(171, 221, 212) 90% );
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-driver.flipped{
+    transform: rotateY(180deg);
+}
+
+.flp{
+    padding: 5px 15px;
+    background-color: rgb(131, 170, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+}
+
+.flip{
+    width: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    #drivers{
+        flex-direction: column;
+    }
+    .card-driver{
+        width: 70vw;
+    }
+}
