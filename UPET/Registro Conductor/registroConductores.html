@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Conductor</title>
+    <link rel="stylesheet" href="../Registro Pasajero/profile.css">
+    <link rel="stylesheet" href="registroConductores.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+
+</head>
+
+
+
+
+
+<body style="background: rgba(223, 247, 255, 0.35);">
+
+   <header> 
+      <a href="#" class="logo">
+          <img src="assets/logo.svg" alt="Logo">
+          <h1>uPet</h1>
+      </a>
+      <nav class="navbar">
+          
+         
+         
+         <input type="checkbox" id="check" >
+          <label for="check" class="menu-responsive">
+            <i  style="color:white;" class="fas fa-bars"></i>
+          </label>
+         
+          
+          <label class="nav-label" for="menu">
+              <img src="assets/menu.svg" alt="Menu icon" class="menu-icon">
+          </label>
+
+          <input type="checkbox" id="menu" class="nav-input">
+          <ul class="menu">
+              <li><a href="#" class="nav-item">Inicio</a></li>
+              <li><a href="#" class="nav-item">Pasajero</a></li>
+              <li><a href="#" class="nav-item">Conductor</a></li>
+              <li><a href="#" class="nav-item">Veterinarias</a></li>
+              <button class="login" class="nav-item"><a href="login.html">Iniciar sesión</a></button>
+          </ul>
+      </nav>
+   </header>
+
+
+   <div class="upload">
+      <img src="../Registro Pasajero/noprofil.jpg" width = 100 height = 100 alt="">
+      <div class="round">
+        <input type="file">
+        <i  class = "fa fa-camera" style = "color: #fff;"></i>
+      </div>
+    </div>
+
+
+    <div class="container">
+    <div class="title">Registro Conductor</div>
+    <form id="form" action="#" >
+<div class="user-details">
+<div class="input-box">
+    <span class="details"></span>
+    <label for="username">
+  </label>  <input id="username" type="text" placeholder="Ingrese su nombre" name="username" >
+    <div class="error"></div>
+
+ </div>
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="surname">
+   </label> <input id="surname" name="surname" type="text" placeholder="Ingrese su apellido" >
+    <div class="error"></div>
+ </div>
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="email">
+  </label>  <input id="email" name="email" type="email" placeholder="Ingrese su email" >
+    <div class="error"></div>
+ </div>
+
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="cell">
+    </label><input id="cell" name="cell" type="tel" placeholder="Celular Ej 1100000000" pattern="[0-9]{2}[0-9]{4}[0-9]{4}"   >
+    <div class="error"></div>
+ </div>
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="password">
+   </label>
+   <input id="password" name="password" type="password" placeholder="Ingrese su contraseña" >
+    <div class="error"></div>
+ </div>
+
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="password2">
+    </label>
+    <input  id="password2"  name="password2" type="password" placeholder="Repita su contraseña">
+    <div class="error"></div>
+
+ </div>
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="carModel"></label>
+    <input id="carModel" name="carModel" type="text" placeholder="Modelo Auto">
+    <div class="error"></div>
+ </div>
+
+
+
+ <div class="input-box">
+    <span class="details"></span>
+    <label for="patent"></label>
+    <input id="patent" name="patent" type="text" placeholder="Numero de Patente" >
+    <div class="error"></div>
+ </div>
+
+</div>
+
+<div class="pet-size">
+    <span class="pet-title">Tamaño Mascota</span>
+    <div class="category">
+
+        <input type="checkbox" name="grande">
+        <label for="grande">Grande</label>
+
+
+        <input type="checkbox" name="mediano">
+        <label for="grande">Mediano</label>
+     
+
+        <input type="checkbox" name="chico">
+        <label for="chico">Chico</label>
+
+
+        <input type="checkbox" name="urgencia">
+        <label for="urgencia">Urgencias</label>
+     
+     
+</div>
+</div>
+
+<div class="conditions">
+   <input type="checkbox" name="conditions" id="conditions" checked required> <label for="conditions">Acepto terminos y condiciones</label>
+
+</div>
+
+<div class="button-register">
+   <input type="submit">
+</div>
+
+<div class="account"> <h4 class="have-account">Ya tengo una cuenta <a href="#">Iniciar Sesión</a></h4></div>
+    </form>
+
+   
+
+    </div>
+
+    <script src="registroConductores.js"></script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Header*/
+
+header{
+    width: 100vw;
+    height: 15vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/*Header - logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.logo img{
+    width: 6em;
+}
+
+.logo h1{
+    font-size: clamp(1.5em, 2vw, 3em);
+}
+
+/*Header nav-bar*/
+.nav-label, #menu{
+    display: none;
+}
+
+.menu, .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu li a, button, .footer-links ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5em;
+    letter-spacing: 0.06em;
+    font-size: clamp(1em, 1.5vw, 1em);
+}
+
+.menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: #6BD9EC;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+.menu li a:hover:after, .footer-links ul li a:hover:after{
+    width: 100%;
+}
+
+
+.menu button{
+   margin-right: 1em;
+}
+
+.menu button{
+    background-color: #6BD9EC;
+    padding: 0.5em 0.7em;
+    border-radius: 2em;
+    color: black;
+    border: none;
+    font-size: clamp(1em, 1.5vw, 1em);
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu button a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu button:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    outline: 3px solid #6BD9EC;
+    background-color: rgba(85, 85, 85, 0.4);
+    color: #6BD9EC;
+}
+
+.menu button a:hover{
+    color: #6BD9EC;
+}
+
+
+
+/*Body*/
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(223, 247, 255, 0.35);
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(223, 247, 255, 0.35);
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Imagen perrito*/
+.doggy{
+    height: 428px;
+    width: 400px;
+    position: absolute;
+    margin: 32px;
+    opacity: 85%;
+   
+}
+
+.doggy img{
+    width: 100%;
+    height: 102%;
+    border-radius: 5px;
+}
+
+
+
+
+/*formulario*/
+
+.container {
+    max-width: 600px;
+    max-height: 400px; 
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+  
+}
+
+
+form{
+    background: #bce6ee;
+    padding: 5px;
+    border-radius: 5px;
+    outline:1px solid #6BD9EC;
+
+}
+
+
+
+.container .title{
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.container .title::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #6bd9ec5e;
+}
+
+
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 5px ;
+}
+
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 10px;
+    
+}
+
+/*
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  
+}
+
+
+.user-details .input-box input{
+
+    height: 60%;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width:2px;
+    transition: all 0.3 ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:active{
+    border-color:rgba(94, 91, 255, 1);
+}
+
+form .pet-size .pet-title{
+    font-size: 20px; 
+    font-weight: 500;
+}
+
+
+
+
+
+
+form .button-register{
+    height: 30px;
+    width: 30px 0;
+  
+    
+}
+*/
+.category{
+    margin: 5px;
+    text-align: center;
+}
+.category label{
+    margin-right:15px !important;
+ 
+}
+
+
+.conditions{
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+
+/*boton*/
+
+form .button-register{
+    text-align: center;
+}
+
+form .button-register input{
+    width: 100%;
+    width: 10em;
+    margin: 1em auto;
+    padding: 0.5em;
+    color: black;
+    background-color: #6BD9EC;
+    border: #509fad 3px solid;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2em;
+    
+    
+}
+
+
+.user-details .input-box input{
+   
+    background-color: transparent;
+    border: none;
+    border-bottom:#509fad 2px solid;
+    padding: 1em 1em 0.3em 1em;
+    margin: 10px;
+    outline: none;
+}
+
+form .button-register input:hover{
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+
+.account a{
+    color: rgba(94, 91, 255, 1);
+    text-decoration: none;
+}
+
+.account{
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.have-account{
+    font-size: 14px;
+    margin-top: 3px;
+    
+}
+
+.have-account a:hover{
+    color: #4070f4;
+}
+
+
+/* Placeholder*/
+
+label input::placeholder{
+    color: rgba(0, 0, 0, 0.689);
+}
+
+
+
+/*End*/
+
+
+/*js*/
+.input-box.success input {
+    border-color: #09c372;
+}
+
+.input-box.error input {
+    border-color: #ff3860;
+}
+
+.input-box .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+/*End*/
+
+
+/*ocultar*/
+.menu-responsive, #check{
+    display: none;
+}
+
+
+
+
+/*media*/
+
+@media (max-width:1200px){
+    .doggy{
+       display: none;
+    }
+
+    .upload{
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:850px){
+
+   
+    .container{
+        display: contents;
+            max-width: 600px;
+            max-height: 400px;
+            background: #fff;
+            padding: 25px 2px;
+            border-radius: 5px;
+            text-align: center;
+    
+}
+
+.container .title::before{
+    display:none ;
+}
+
+
+  
+  .activa{
+    margin-left: 30px;
+  }
+.container .title {
+    display: contents;
+}
+
+form .user-details .input-box{
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+    width: 100%;
+}
+
+
+.container form .user-details{
+    max-height: 300px;
+    overflow-y:scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 12px 0 10px 0;
+ 
+
+}
+
+
+
+
+    .doggy {
+    display:none;
+    }
+    
+
+    .menu-responsive{
+        display: block;
+      }
+      ul{
+          display: grid;
+          position: fixed;
+          width: 100%;
+          height: auto;
+          background: #2c3e50;
+          top: 15vh;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.activa{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+
+      .menu button{
+        display: none;
+      }
+
+
+      #check:checked ~ ul {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+        align-items: center;
+        height: auto;
+        
+  }
+
+  .menu, .footer-links ul{
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+}
+}
+

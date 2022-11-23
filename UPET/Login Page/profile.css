@@ -1,0 +1,98 @@
+
+  .upload {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+}
+  .upload img{
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+  }
+  
+  .upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .upload .round input[type = "file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  input[type=file]::-webkit-file-upload-button{
+      cursor: pointer;
+  }
+
+
+  /* profile 2*/
+  
+
+  .btn-warning{
+    position: absolute;
+    padding: 1px 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #6BD9EC;
+    border: 0;
+    transition: 0.2s;
+    overflow: hidden; 
+    margin-top: 60px;
+  }
+
+  .delete{
+    position: absolute;
+    margin-left: 210px;
+    top: 60px;
+ 
+    
+}
+  
+.button-delete{
+  padding: 1px 25px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #6BD9EC;
+  border: 0;
+  transition: 0.2s;
+  overflow: hidden; 
+  
+}
+ 
+
+.button-delete:hover{
+  background-color: #d9a400;
+  cursor: pointer;
+}
+
+  .btn-warning input[type = "file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: scale(3);
+    opacity: 0;
+  }
+  
+  .btn-warning:hover{
+    background-color: #d9a400;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .upload {
+    display:none;
+    }
+    }
+    
