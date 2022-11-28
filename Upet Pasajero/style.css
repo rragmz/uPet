@@ -134,6 +134,10 @@ body {
     display: flex;
 }
 
+.first-section .image-pasajero {
+    display: none;
+}
+
 .first-section img {
     width: 40em;
     height: 33em;
