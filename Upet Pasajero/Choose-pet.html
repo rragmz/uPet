@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/logo1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Upet</title>
+
+</head>
+<body>
+    <header> 
+        <a href="#" class="logo">
+            <img src="media/logo.png" alt="Logo">
+            <h1>uPet</h1>
+        </a>
+        <nav class="navbar">
+        
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-responsive">
+            <i  style="color:white;" class="fas fa-bars"></i>
+            </label>
+
+            <input type="checkbox" id="menu" class="nav-input">
+            <ul class="menu">
+                <li><a href="#" class="nav-item">Inicio</a></li>
+                <li><a href="#" class="nav-item">Pasajero</a></li>
+                <li><a href="#" class="nav-item">Conductor</a></li>
+                <li><a href="veterinarias.html" class="nav-item">Veterinarias</a></li>
+                <button class="login" class="nav-item"><a href="login.html">Iniciar sesión</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="choose-pets">
+            <h2>¿Que mascota tenés?</h2>
+
+        <form action="/Choose-size.html">
+    
+            <div class="position-cards"> 
+                <div class="animals-cards">
+                    <label>
+                        <input type="checkbox" value="gato" name="animal" id="gato" class="animals"><img src="media/gato2.jpg" alt="gato">
+                        <p>Gato</p>
+                    </label>
+                </div>
+                <div class="animals-cards">
+                    <label>
+                        <input type="checkbox" value="perro" id="perro" name="animal" class="animals"><img src="media/siberiano6.jpg" alt="perro">
+                        <p>Perro</p>
+                    </label>
+                </div>
+                <div class="animals-cards">
+                    <label>
+                            <input type="checkbox" value="otros" id="otros" name="animal" class="animals"> <img src="media/conejo2.jpg" alt="otros">
+                        <p>Otros</p>
+                    </label>
+                </div>
+            </div>
+            <div class="btn-choosepet">
+                <button type="submit" id="boton" >Siguiente</button>
+            </div>
+        </form>
+               
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Términos</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>Copyright UPet, Inc</p>
+        </div>
+    </footer>
+</body>
+</html>

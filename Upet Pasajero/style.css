@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/*Todos los elementos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*Header*/
+
+header{
+    width: 100vw;
+    height: 15vh;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+/*Header - logo*/
+.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.logo img{
+    width: 6em;
+}
+
+.logo h1{
+    font-size: clamp(1.5em, 2vw, 3em);
+}
+
+/*Header nav-bar*/
+.nav-label, #menu{
+    display: none;
+}
+
+.menu, .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+}
+
+.menu li a, .menu button, .footer-links ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5em;
+    letter-spacing: 0.06em;
+    font-size: clamp(1em, 1.5vw, 1em);
+}
+
+.menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: #6BD9EC;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+.menu li a:hover:after, .footer-links ul li a:hover:after{
+    width: 100%;
+}
+
+
+.menu button{
+   margin-right: 1em;
+}
+
+.menu button{
+    background-color: #6BD9EC;
+    padding: 0.5em 0.7em;
+    border-radius: 2em;
+    color: black;
+    border: none;
+    font-size: clamp(1em, 1.5vw, 1em);
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu button a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu button:hover{
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    border: 3px solid #6BD9EC;
+    background-color: rgba(85, 85, 85, 0.4);
+    color: #6BD9EC;
+}
+
+.menu button a:hover{
+    color: #6BD9EC;
+}
+
+
+.menu-responsive, #check{
+    display: none;
+}
+
+
+/*Main*/
+/*first-section*/
+
+body {
+    margin: 0;
+    background-color: #DFF7FF;
+}
+
+#pasajero {
+    text-align: center;
+}
+
+.first-section {
+    display: flex;
+}
+
+.first-section img {
+    width: 40em;
+    height: 33em;
+    padding: 20px 0px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+.image-pasajero {
+    display: flex;
+    justify-content: first baseline;
+}
+
+.text-pasajero {
+    width: 75%;
+    padding: 25px;
+}
+
+.text-pasajero ul{
+    list-style: none;
+}
+
+.text-pasajero h1{
+    font-size: 3.5em;
+    padding: 3px;
+}
+.text-pasajero p{
+    font-size: 2em;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+.text-pasajero ul li{
+    font-size: 1.2em;
+    
+}
+
+.text-pasajero a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 45px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+.text-pasajero a:hover{
+    background-color:rgba(54, 53, 53, 0.81);
+    cursor: pointer;
+}
+
+/*Choose-pet*/
+
+.main {
+    width: auto;
+    height: auto;
+}
+
+#choose-pets h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#choose-pets p {
+    font-size: 1.7em;
+    margin-left: 15px;
+}
+
+.animals-cards label input[type='checkbox']{
+    visibility: hidden;
+}
+
+.animals-cards label img:hover{
+    outline: 5px solid #39adc2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.animals-cards label input:checked+img{
+    outline: 4px solid #39adc2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.animals-cards img:hover {
+    cursor: pointer;
+    outline: 2px solid #39adc2;
+}
+
+.position-cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.animals-cards {
+    margin: 0px 30px 0px 30px;
+}
+
+.animals-cards label img {
+    height: 190px;
+    width: 190px;
+    border-radius: 500px;
+    border: 0.1px solid #186472;
+
+}
+
+#choose-pets form button{
+    text-decoration:none;
+    background-color: #242525;
+    padding: 0.7em;
+    border-radius: 2em;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: clamp(1.5em, 1vw, 1.5em);
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+
+.btn-choosepet {
+    text-align:right;
+}
+
+#choose-pets form button:hover{
+    cursor: pointer;
+    background-color:#186472;
+}
+
+/*Choose-size*/
+
+#choose-size h2 {
+    font-size: 2.5em;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#choose-size p {
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+#choose-size form button{
+    text-decoration:none;
+    background-color: #242525;
+    padding: 0.7em;
+    border-radius: 2em;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: clamp(1.5em, 1vw, 1.5em);
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+}
+
+#choose-size form button:hover{
+    cursor: pointer;
+    background-color:#186472;
+}
+
+
+
+/*Veterinarias*/
+
+.first-vete {
+    display: flex;
+    margin: 20px;
+    padding: 25px;
+}
+.first-vete img {
+    width: 50%;
+    margin-right: 0px;
+    border-radius: 30px;
+}
+
+.first-vete .text-vete h1{
+    font-size: 3em;
+    margin-bottom: 70px;
+    margin-right: 100px;
+    text-align: center;
+
+}
+
+.first-vete .text-vete p {
+    font-size: 1.5em;
+    text-align:center;
+    margin-right: 100px;
+}
+
+.line-mid {
+    border: 30px solid #92A9F8;
+}
+
+/*2da parte vete*/
+
+.second-vete {
+    width: 100%;
+    display: flex;
+    max-width: 85%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.second-vete-text h1{
+    font-size: 2em;
+    margin: 10px;
+    margin-left: 90px;
+    padding: 5px;
+}
+.second-vete-text h1 a{
+    text-decoration: none;
+}
+
+.vete-cards {
+    width: 100%;
+    margin: 60px 15px ;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.vete-cards:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
+    transform: translateY(-3%);
+}
+
+.vete-cards img {
+    width: 100%;
+    height: 170px;
+}
+
+.vete-cards .contents {
+    padding: 15px;
+    text-align: center;
+}
+
+.vete-cards .contents p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.vete-cards .contents h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.vete-cards .contents a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(179, 20, 20);
+    border: rgb(179, 20, 20);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.vete-cards .contents a:hover {
+    background: rgb(179, 20, 20);
+    color: #fff;
+}
+
+/*Footer*/
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    color: white;
+    margin-top: 30px;
+}
+
+/*Scroll*/
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: #222222e5;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #91edfd;
+    border-radius: 10.0px;
+}
+
+.copy{
+    font-size: clamp(0.6em, 1.5vw, 1em);
+}
+
+@media (max-width:800px){
+    .header{
+        width: 110vw}
+    
+        .menu-responsive{
+            display: block;
+          }
+          ul{
+              display: grid;
+              position: fixed;
+              width: 100%;
+              height: auto; 
+              background: #2c3e50;
+              top: 15vh;
+              left: -100%;
+              text-align: center;
+              transition: all .5s;
+          }
+          nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+          }
+          nav ul li a{
+            font-size: 20px;
+          }
+          a:hover,a.activa{
+            background: none;
+            color: #0082e6;
+          }
+          #check:checked ~ ul{
+            left: 0;
+          }
+        
+          .menu button{
+            display: none;
+          }
+        
+          #check:checked ~ ul {
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: nowrap; */
+            align-items: center;
+            height: auto;
+        }
+        
+        .sidenav {
+            display: contents;
+        }
+    
+        header{
+        width: 110vw;
+        }
+    
+        .main{
+            display: contents;
+        }
+
+        footer{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    
+        footer ul li{
+            font-size: 0.8em;
+        }
+
+        .first-section .text-pasajero{
+            
+            text-align:left;
+            margin-right: 1em;
+        }
+
+        /* Choose-pet*/ /*Choose-size*/
+        .btn-choosepet {
+            text-align:center;
+        }
+
+        .position-cards {
+            flex-direction: column;
+        }
+
+        .animals-cards {
+            justify-content: space-between;
+        }
+
+        #choose-pets h2 {
+            font-size: 2.5em;
+        }
+
+        #choose-size h2 {
+            font-size: 1.5em;
+        }
+        
+        /*Veterinarias*/
+
+        .first-vete img {
+            display: none;
+        }
+        .first-vete .text-vete h1{
+            justify-content: center;
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 20px;
+            padding: 0px;
+        }
+        .first-vete .text-vete p{
+            justify-content: center;
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .second-vete {
+            flex-direction: column;
+        }
+
+    }
+

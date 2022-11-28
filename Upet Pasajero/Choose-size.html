@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="icon" href="media/logo1.ico">
+    <title>Upet</title>
+</head>
+<body>
+    <header> 
+        <a href="#" class="logo">
+            <img src="media/logo.png" alt="Logo">
+            <h1>uPet</h1>
+        </a>
+        <nav class="navbar">
+        
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-responsive">
+            <i  style="color:white;" class="fas fa-bars"></i>
+            </label>
+
+            <label class="nav-label" for="menu">
+                <img src="assets/menu.svg" alt="Menu icon" class="menu-icon">
+            </label>
+
+            <input type="checkbox" id="menu" class="nav-input">
+            <ul class="menu">
+                <li><a href="#" class="nav-item">Inicio</a></li>
+                <li><a href="pasajero.html" class="nav-item">Pasajero</a></li>
+                <li><a href="#" class="nav-item">Conductor</a></li>
+                <li><a href="veterinarias.html" class="nav-item">Veterinarias</a></li>
+                <button class="login" class="nav-item"><a href="login.html">Iniciar sesión</a></button>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="choose-size">
+            <h2>SELECCIONE TAMAÑO DE SU MASCOTA</h2>
+    
+            <form action="#">
+                <div class="position-cards">
+                    <div class="animals-cards">
+                        <label>
+                            <input type="checkbox" value="pequeño" name="animal" id="pequeño" class="animals"><img src="media/pequeño-atardecer.jpg" alt="pequeño">
+                            <p>Pequeño</p>
+                        </label>
+                    </div>
+                    <div class="animals-cards">
+                        <label>
+                            <input type="checkbox" value="Mediano" name="animal" id="mediano" class="animals"><img src="media/bretonx2.png" alt="mediano">
+                            <p>Mediano</p>
+                        </label>
+                    </div>
+                    <div class="animals-cards">
+                        <label>
+                            <input type="checkbox" value="grande" name="animal" id="grande" class="animals"><img src="media/boyero.png" alt="grande">
+                            <p>Grande</p>
+                        </label>
+                    </div>
+                </div> 
+
+                <div class="btn-choosepet">
+                    <button type="submit" id="boton" >Siguiente</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Términos</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>Copyright UPet, Inc</p>
+        </div>
+    </footer>
+</body>
+</html>
