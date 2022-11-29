@@ -123,7 +123,7 @@ header{
 
 body {
     margin: 0;
-    background-color: #DFF7FF;
+    background: url('media/background-second.png');
 }
 
 #pasajero {
