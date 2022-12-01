@@ -134,10 +134,6 @@ body {
     display: flex;
 }
 
-.first-section .image-pasajero {
-    display: none;
-}
-
 .first-section img {
     width: 40em;
     height: 33em;
@@ -507,6 +503,10 @@ body::-webkit-scrollbar-thumb{
             
             text-align:left;
             margin-right: 1em;
+        }
+    
+        .first-section .image-pasajero {
+            display: none;
         }
 
         /* Choose-pet*/ /*Choose-size*/
