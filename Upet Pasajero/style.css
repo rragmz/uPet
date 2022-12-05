@@ -135,8 +135,8 @@ body {
 }
 
 .first-section img {
-    width: 40em;
-    height: 33em;
+    width: 37em;
+    height: 30em;
     padding: 20px 0px;
     border-radius: 300px 300px 300px 300px;
 }
@@ -160,13 +160,12 @@ body {
     padding: 3px;
 }
 .text-pasajero p{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 .text-pasajero ul li{
-    font-size: 1.2em;
-    
+    font-size: 1em;
 }
 
 .text-pasajero a{
@@ -318,7 +317,6 @@ body {
     margin-bottom: 70px;
     margin-right: 100px;
     text-align: center;
-
 }
 
 .first-vete .text-vete p {
